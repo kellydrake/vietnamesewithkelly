@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css1/phrases.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6ad6e8c1f8.js" crossorigin="anonymous"></script>
+
+<title>Vietnamese phrases</title>
+</head>
+
+<body>
+    
+<section class="header">
+	<nav>
+		<a href="vietnamesewithkelly.html"><img src="pics/logo1.png" alt="vietnamese with kelly logo" width="30%"></a>
+		
+		<div class="nav-links" id="navLinks">
+		
+		<i class="fas fa-times" onclick="hideMenu()"></i>
+		
+			<ul>
+				<li><a href="vietnamesewithkelly.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="pronunciation.html">Pronunciation</a></li>
+				<li><a href="phrases.html">Phrases</a></li>
+				<li><a href="vocab.html">Vocab</a></li>
+			</ul>
+			
+		</div>
+		<i class="fas fa-bars" onclick="showMenu()"></i>
+	</nav>
+<h1>Vietnamese Phrases</h1>
+    <p>Here you'll find a few basic phrases in Vietnamese. If you need some pronunciation help, just click on the audio buttons. Interested in learning some vocabulary words? Check out the <a href="vocab.html">vocabulary page</a> and test your learnings. Keep up the great work!</p>
+<main class="grid-parent">
+<section class="main-content">
+
+	<ul>
+		<li>Hello = Xin chào</li>
+		<audio controls>
+			<source src="audio\Hello.m4a" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<li>Yes/No = Dạ/Không</li>
+        <audio controls>
+			<source src="audio\Yes no.m4a" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<li>How are you? = Khỏe không?</li>
+        <audio controls>
+			<source src="audio\How are you.m4a" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<li>Thank you = Cảm ơn</li>
+        <audio controls>
+			<source src="audio\Thanks.m4a" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+    </ul>
+</section>
+
+    <aside class="sidebar">
+        <ul>
+		<li>Are you hungry? = Đói bụng không?</li>
+        <audio controls>
+			<source src="audio\Are you hungry.m4a" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<li>Sorry = Xin lỗi</li>
+        <audio controls>
+			<source src="audio\Sorry.m4a" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<li>How much? = Bao nhiêu?</li>
+        <audio controls>
+			<source src="audio\How much.m4a" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<li>No problem = Không có gì</li>
+        <audio controls>
+			<source src="audio\No prob.m4a" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+	</ul>
+</aside>
+</main>
+</section>
+    <section class="footer">
+		
+		<p>Created by Kelly</p>
+	</section>
+
+    <button id="btnScrollToTop">
+		<i class="fas fa-chevron-up"></i>
+	</button>
+	
+<!---JS for toggle menu for small devices---->
+	<script>
+	var navLinks = document.getElementById("navLinks");
+	
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+	/*JS scroll up button*/
+
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+	btnScrollToTop.addEventListener("click", function () {
+	window.scrollTo({
+		top: 0,
+		left: 0,
+		behavior: "smooth"
+	})
+	});
+	</script>
+</body>
+</html>
