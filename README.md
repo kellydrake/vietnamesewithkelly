@@ -2,7 +2,7 @@ Welcome!
 
 I created this website as a way to practice the foundations of web development: HTML, CSS, & JavaScript, while also practicing the Vietnamese language! It was a perfect way to combine two of my passions into one project.  
 
-You can access the website here: XXXXXXXXXXXXXXXXXXX
+You can access the website here: https://kellydrake.github.io/vietnamesewithkelly/vietnamesewithkelly.html 
 
 Below is a breakdown of each page:
   - Home page: I included a welcome header with a CTA which will take users to the pronunciation page first. Since this site is all about learning a new language, I believe it's important to learn the alphabet and how to pronounce words before jumping into anything else.
