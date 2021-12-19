@@ -1,6 +1,6 @@
 Welcome!
 
-I created this website as a way to practice the foundations of web development: HTML, CSS, & JavaScript.
+I created this website as a way to practice the foundations of web development: HTML, CSS, & JavaScript, while also practicing the Vietnamese language!
 
 You can access the website here: XXXXXXXXXXXXXXXXXXX
 
