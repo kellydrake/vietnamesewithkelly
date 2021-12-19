@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css1\website1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<script src="vietwithkelly.js"></script>
+<script src="https://kit.fontawesome.com/6ad6e8c1f8.js" crossorigin="anonymous"></script>
+
+	<title>Vietnamese with Kelly</title>
+</head>
+
+<body>
+	<nav>
+		<a href="vietnamesewithkelly.html" class="logo" width="30%">VWK</a>
+		
+		<div class="nav-links" id="navLinks">
+		
+		<i class="fas fa-times" id="menu-toggle" aria-label="Close-menu" title="close menu icon" onclick="hideMenu()"></i>
+		
+			<ul>
+				<li><a href="vietnamesewithkelly.html" title="Home page">Home</a></li>
+				<li><a href="about.html" title="About Kelly">About</a></li>
+				<li><a href="pronunciation.html" title="Pronunciation">Pronunciation</a></li>
+				<li><a href="phrases.html" title="Phrases">Phrases</a></li>
+				<li><a href="vocab.html" title="Vocabulary">Vocab</a></li>
+			</ul>
+			
+		</div>
+		<i class="fas fa-bars" id="menu-toggle" aria-label="open-menu" title="open menu icon" alt="open menu icon" onclick="showMenu()"></i>
+	</nav>
+    <main class="grid-parent">
+    <section class="main-content">
+	    <div class="text-box">
+	    <h1>Vietnamese with Kelly</h1>
+            <div class="intro"><p>Ready to get started learning Vietnamese?<br> Let's dive into learning the alphabet first by clicking the button below!</p></div>
+        <a href="pronunciation.html" class="hero-btn">Learn the Alphabet</a>
+	    </div>
+    </section>
+        <aside class="image-section">
+            <img src="pics\nha.jpeg" alt="website creater, kelly, in vietnam">
+        </aside>
+    </main>
+	
+	
+
+	
+	
+<!---JS toggle menu for small devices-->
+	<script>
+	var navLinks = document.getElementById("navLinks");
+	
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+	
+	</script>
+</body>
+</html>
