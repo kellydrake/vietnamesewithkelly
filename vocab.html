@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css1/vocab.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6ad6e8c1f8.js" crossorigin="anonymous"></script>
+<script src="vietwithkelly.js" type="text/javascript"></script>
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<title>Vocabulary</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="max-width">
+            <img src="logo.jpeg" class="logo" alt="vietnamese with kelly logo">
+            <ul class="nav-list">
+                <li><a href="vietnamesewithkelly.html">Home</li></a>
+                <li><a href="about.html">About</li></a>
+                <li><a href="pronunciation.html">Pronunciation</li></a>
+                <li><a href="phrases.html">Phrases</li></a>
+                <li><a href="vocab.html">Vocab</li></a>
+            </ul>
+                <div class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<h1>Vocabulary</h1>
+    <p>On this page, you'll find common vocabulary words broken down into categories related to family, home, travel, and food. If you click on a vocabulary word card, the English translation will be revealed on the opposite side. Good luck!</p>
+
+    <div class="container">
+        
+        <div class="heading">
+            <h2>Family</h2>
+        </div>
+
+    <div class="row">
+      
+        <div class="card" onclick="flip(event)">
+           
+            <div class="card-front">
+                <h3>Mẹ</h3></div>
+            <div class="card-back">
+                <h3>Mom</h3></div>
+        </div>
+        
+
+    
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Ba</h3></div>
+            <div class="card-back">
+                <h3>Dad</h3></div>
+        </div>
+        
+
+      
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Bà nội</h3></div>
+            <div class="card-back">
+                <h3>Paternal Grandma</h3></div>
+        </div>
+        
+
+       
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Bà ngoại</h3></div>
+            <div class="card-back">
+                <h3>Maternal Grandma</h3></div>
+        </div>
+        
+        
+    </div>
+    </div>
+
+
+    <div class="container">
+        <div class="heading">
+            <h2>Home</h2>
+        </div>
+    <div class="row">
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Nhà</h3></div>
+            <div class="card-back">
+                <h3>House</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Bàn</h3></div>
+            <div class="card-back">
+                <h3>Table</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Ghế</h3></div>
+            <div class="card-back">
+                <h3>Chair</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Sàn nhà</h3></div>
+            <div class="card-back">
+                <h3>Floor</h3></div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container">
+        <div class="heading">
+            <h2>Travel</h2>
+        </div>
+    <div class="row">
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Sân bay</h3></div>
+            <div class="card-back">
+                <h3>Airport</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Máy bay</h3></div>
+            <div class="card-back">
+                <h3>Airplane</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Hành lý</h3></div>
+            <div class="card-back">
+                <h3>Luggage</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Vé</h3></div>
+            <div class="card-back">
+                <h3>Ticket</h3></div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container">
+        <div class="heading">
+            <h2>Food</h2>
+        </div>
+    <div class="row">
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Bánh mì</h3></div>
+            <div class="card-back">
+                <h3>Bread</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Rau</h3></div>
+            <div class="card-back">
+                <h3>Vegetables</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Trái cây</h3></div>
+            <div class="card-back">
+                <h3>Fruit</h3></div>
+        </div>
+
+        <div class="card" onclick="flip(event)">
+            <div class="card-front">
+                <h3>Con cá</h3></div>
+            <div class="card-back">
+                <h3>Fish</h3></div>
+        </div>
+
+    </div>
+    </div>
+
+    <section class="footer">
+		
+		<p>Created by Kelly</p>
+	</section>
+
+    <button id="btnScrollToTop">
+		<i class="fas fa-chevron-up"></i>
+	</button>
+
+<script src="vietwithkelly.js" type="text/javascript"></script>
+    </body>
+    </html>
