@@ -122,9 +122,6 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 768px){
-	html{
-		background-color: #515B31;
-	}
 	.max-width{
         padding: 0 50px;
     }
