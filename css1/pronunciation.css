@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Merriweather', serif;
     line-height: 1.5;
+	box-sizing: border-box;
 }
 body{
 	background-image: url(background.png);
@@ -11,68 +12,68 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 }
+/**nav styles**/
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    overflow-x: hidden;
+}
 nav{
-	display: flex;
-	padding: 2% 6%;
-	justify-content: space-between;
-	align-items: center;
-}
-nav image{
-	width: 150px;
-	
-}
-.nav-links{
-	flex: 1;
-	text-align: right;	
-}
-.nav-links ul li{
-	list-style: none;
-	display: inline-block;
-	padding: 8px 12px;
-	position: relative;
-}
-.nav-links ul li a{
-	color: #1434A4;
-	text-decoration: none;
-	font-size: 17px;
-	font-weight: bold;
-}
-.nav-links ul li::after{
-	content: '';
-	width: 0%;
-	height: 2px;
-	background: #1434A4;
-	display: block;
-	margin: auto;
-	transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-	width: 100%;
-}
-nav .fas{
-	display: none;
-}
-nav .fas{
-	display: none;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 300;
 }
 
+nav .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list li{
+    list-style-type: none;
+    display: inline-block;
+}   
+
+nav ul li a{
+	color:#515B31;
+	font-size: 18px;
+	font-weight: 600;
+    margin-left: 25px;
+	text-decoration: none;
+}
+nav ul li a:hover{
+    color: #e62b2b;
+    transform: scale(1.1);
+    transition: all 500ms ease-in-out;
+}
+.hamburger-btn{
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+	visibility: hidden;
+}
+/*main content*/
 h1{
-    color: #1434A4;
+    color:#e62b2b;
+	text-shadow: 2px 2px 2px rgba(206,206,206,0.9);
     text-align: center;
     font-size: 40px;
     padding-top: 20px;
 	padding-bottom: 40px;
-	text-shadow: 2px 2px rgb(179, 185, 211);
 }
 p{
-	color: #000000;
+	color: #6b3d28;
     text-align: center;
-	font-size: 17px;
+	font-size: 20px;
 	font-weight: 800;
     word-spacing: 1px;
     margin: 5px;
 	padding-left: 15%;
-	padding-right: 15%;;
+	padding-right: 15%;
 }
 .video-wrapper{
     width: 100%; max-width: 800px;
@@ -96,6 +97,8 @@ p{
     color: #0B3C5D;
 	font-weight: 600;
 }
+
+/*scroll to top button*/
 #btnScrollToTop{
 	position: fixed;
 	right: 10px;
@@ -103,7 +106,7 @@ p{
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
-	background: #1434A4;
+	background: #e62b2b;
 	color: #fff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.25);
 	border: none;
@@ -112,45 +115,41 @@ p{
 #btnScrollToTop:hover{
 	transform: scale(1.1);
 }
-.logo{
-	visibility: hidden;
-}
-
 
 @media screen and (max-width: 768px){
-	body{
-		background-color: #EFE3D2;
-		background-image: none;
+	.max-width{
+		padding: 0 50px;
 	}
-	html, body {
-		overflow-x: hidden;
-	}
-
-	.nav-links ul li{
+	.hamburger-btn{
 		display: block;
+		z-index: 999;
 	}
-	.nav-links{
-		position: absolute;
-		background: #EFE3D2;
+	nav .nav-list.active{
+		left: 0;
+		z-index: 1;
+	}
+	nav .nav-list{
+		position: fixed;
 		height: 100vh;
-		width: 190px;
+		width: 100%;
+		left: -100%;
 		top: 0;
-		right: -200px;
-		text-align: left;
-		z-index: 2;
-		transition: 1s;
+		text-align: center;
+		padding-top: 80px;
+		transition: all 0.3s ease;
+		background: #E4E8D6;
 	}
-	
-	nav .fas{
+	nav .nav-list li{
 		display: block;
-		color: #000000;
-		margin: 10px;
-		font-size: 23px;
-		cursor: pointer;
 	}
-	
-	.nav-links ul{
-		padding: 30px;
+	nav .nav-list li a{
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 25px;
+	}
+	p{
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 	.footer{
         width: 100%;
@@ -161,7 +160,7 @@ p{
     .footer p{
         padding-top: 30px;
         text-align: center;
-        color: #0B3C5D;
+        color: #6b3d28;
         font-weight: 600;
     }
 
