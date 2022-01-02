@@ -36,7 +36,7 @@ nav .max-width{
 }   
 
 nav ul li a{
-	color:#515B31;
+	color:#353B20;
 	font-size: 18px;
 	font-weight: 600;
     margin-left: 25px;
@@ -66,7 +66,7 @@ h1{
 	padding-bottom: 40px;
 }
 p{
-	color: #6b3d28;
+	color: #353B20;
     text-align: center;
 	font-size: 20px;
 	font-weight: 800;
@@ -94,7 +94,7 @@ p{
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    color: #0B3C5D;
+    color: #353B20;
 	font-weight: 600;
 }
 
@@ -161,7 +161,7 @@ p{
     .footer p{
         padding-top: 30px;
         text-align: center;
-        color: #6b3d28;
+        color: #353B20;
         font-weight: 600;
     }
 
