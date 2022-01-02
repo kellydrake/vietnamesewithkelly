@@ -17,7 +17,7 @@
 
 <body>
 	<header>
-        <nav>
+        <nav role="navigation" aria-labelledby="main-menu">
             <div class="max-width">
             <img src="logo.jpeg" class="logo" alt="vietnamese with kelly logo">
             <ul class="nav-list">
@@ -27,7 +27,7 @@
                 <li><a href="phrases.html">Phrases</li></a>
                 <li><a href="vocab.html">Vocab</li></a>
             </ul>
-                <div class="hamburger-btn">
+                <div class="hamburger-btn" tabindex="0">
                 <i class="fas fa-bars"></i>
                 </div>
             </div>
@@ -36,9 +36,9 @@
     <main class="grid-parent">
     	<section class="main-content">
 	    	<div class="text-box">
-	    		<h1>Vietnamese with Kelly</h1>
+				<h1>Vietnamese with Kelly</h1>
             		<div class="intro"><p>Ready to get started learning Vietnamese?<br>Let's begin by going over the alphabet and pronunciation.</p></div>
-        		<a href="pronunciation.html" class="hero-btn">Learn the alphabet</a>
+        		<a href="pronunciation.html" class="hero-btn" type="button">Learn the alphabet</a>
 	    	</div>
     	</section>
     <aside class="image-section">
