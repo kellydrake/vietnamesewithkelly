@@ -17,7 +17,7 @@ html{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 nav{
     width: 100%;
@@ -131,6 +131,7 @@ h1{
     }
 	nav{
 		margin: 0;
+		overflow: hidden;
 	}
     nav .nav-list.active{
         left: 0;
